@@ -1,0 +1,303 @@
+@import url(./reset.css);
+/* Set the desired font from google fonts, or adobe fonts here */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700;900&display=swap');
+@import url("SourGummy_Regular/stylesheet.css");
+@import url("../webfonts/RibeyeMarrow_Regular/stylesheet.css");
+@import url("../webfonts/CherryBombOne_Regular/stylesheet.css");
+
+
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* GLOBALS */
+body{
+    background-color: rgba(27,18,67,1.00);
+    font-family: "Roboto", sans-serif;
+    /* 
+    100,400,700,900 weights available. Add differrent 
+    weights to the classes or elements that are needed 
+     */
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color:white;
+}
+
+p{
+    margin:10px 50px 10px 0px;
+    line-height: 1.5;
+}
+
+h1 {
+    font-weight: 900;
+    text-align: center;
+    font-size: 2rem;
+}
+
+h2{
+    font-size:1.2rem;
+    font-weight: 900;
+    margin-bottom:10px;
+}
+
+h2 + ul {
+    list-style-type: circle;
+    margin-bottom:10px;
+}
+
+h2 + ul > li {
+    margin-left:30px;
+}
+
+hr{
+    width:100%;
+}
+
+
+.be::before, .em::before, .insta::before, .snap::before {
+    display: inline-block;
+    position: relative;
+    content: "";
+    width: 25px;
+    height: 25px;
+    top: 7px;
+    background-repeat: no-repeat;
+}
+
+.be::before{
+    background-image: url(../img/ico/behance-solid.svg);
+   
+}
+
+.em::before{
+    background-image: url(../img/ico/envelope-solid.svg);
+
+}
+.insta::before{
+    background-image: url(../img/ico/instagram-solid.svg);
+}
+
+.snap::before{
+    background-image: url(../img/ico/instagram-solid.svg);
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+    padding:10px;
+  }
+
+/* LAYOUT */
+
+.full-page-section {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto;
+    height: 100vh;
+/*    background-color: grey;*/
+    background-position: center center fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#hero{
+/*    background-image: url(../img/placeholder.png);*/
+}
+
+#hero > ul {
+    position: absolute;
+    bottom: 25px;
+    font-family: "SourGummy Regular";
+}
+
+#hero > ul > li {
+    display:inline;
+    margin:0 5px 0 5px;
+}
+
+#about-intro{
+    background-image: url(../img/bkg_1-1920x1080.png);
+}
+.row #intro-text .headline-text {
+    font-family: "RibeyeMarrow Regular";
+    font-size: 35px;
+}
+
+#intro-text > p, #intro-text >h2{
+    position: relative;
+    top: 200px;
+    width: 600px;
+    font-family: "SourGummy Regular";
+}
+
+#category-selection{
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 90%; /* Adjust based on design */
+    margin:0 auto;
+    height:100vh;
+}
+
+.category-card {
+    width: 100%;
+    max-width: 250px;
+    margin: 25px;
+    min-height: 400px;
+    max-height: 400px;
+    border: 1px solid white;
+}
+
+.project-info{
+    position:relative;
+    top:300px;
+    left:50px;
+}
+
+ /* Container to hold the video and any overlay content */
+    .video-background {
+      position: relative;
+      width: 100vw;
+      /* min-width: 1080px; */
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    iframe {
+        aspect-ratio: 16 / 9;
+        /* height: auto; */
+        /* width: 100%; */
+    }
+    /* Styling for the iframe to make it cover the full screen */
+    .video-background iframe {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 100vw;  /* Full viewport width */
+      height: 100vh;  /* Full viewport height */
+      transform: translate(-50%, -50%); /* Center the video */
+      z-index: -1; /* Keeps video in the background */
+      pointer-events: none; /* Prevents clicking on the video */
+	  opacity: 35%;
+    }
+#about-detail {
+    font-family: "SourGummy Regular";
+}
+
+.row .column .about-me-heading {
+    font-family: "SourGummy Regular";
+}
+.logo-img {
+    background-image: url(../img/lucier_logo-3x3.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+}
+
+.headshot-img {
+    background-image: url(../img/placeholder-2.png);
+}
+
+
+ 
+
+#project-1 {
+    background-image: url(../img/bkg_2-1920x1080.png);
+
+}
+
+.projects-title {
+    font-family: "RibeyeMarrow Regular";
+}
+
+
+
+
+
+
+/* tag colors */
+
+.green{
+    background-color:rgba(100, 125, 50, 1);
+}
+
+.othercolor{
+    background-color:rgba(50, 125, 50, 1);
+}
+
+.tag {
+    display: inline-block;
+    /* border:1px solid white; */
+    padding:5px 15px 5px 15px;
+    border-radius:25px;
+}
+
+
+
+
+
+@media (min-width: 360px) {
+    .video-background iframe {
+        width: 500vw;  /* Full viewport width */
+        height: 500vh;  /* Full viewport height */
+      }
+  }
+
+@media (min-width: 375px) {
+    .video-background iframe {
+        width: 500vw;  /* Full viewport width */
+        height: 500vh;  /* Full viewport height */
+      }
+  }
+
+
+@media (min-width: 400px) {
+    .video-background iframe {
+        width: 500vw;  /* Full viewport width */
+        height: 500vh;  /* Full viewport height */
+      }
+  }
+  
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media (min-width: 768px) {
+
+  }
+  
+  /* Large devices (desktops, 992px and up) */
+  @media (min-width: 992px) {
+    .video-background iframe {
+        width: 400vw;  /* Full viewport width */
+        height: 200vh;  /* Full viewport height */
+      }
+  }
+  
+  /* Extra large devices (large desktops, 1200px and up) */
+  @media (min-width: 1200px) {
+    .video-background iframe {
+        width: 100vw;  /* Full viewport width */
+        height: 100vh;  /* Full viewport height */
+      }
+  }
+.headline-text {
+}
