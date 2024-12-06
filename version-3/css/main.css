@@ -114,10 +114,11 @@ hr{
     width: 100%;
     margin: 0 auto;
     height: 100vh;
-/*    background-color: grey;*/
+    /*    background-color: grey;*/
     background-position: center center fixed;
     background-repeat: no-repeat;
     background-size: cover;
+    font-family: "SourGummy Regular";
 }
 
 #hero{
@@ -137,9 +138,7 @@ hr{
 
 #about-intro{
     background-image: url(../img/bkg_1-1920x1080.png);
-    padding-bottom: 100px;
 }
-
 .row #intro-text .headline-text {
     font-family: "RibeyeMarrow Regular";
     font-size: 35px;
@@ -158,8 +157,11 @@ hr{
     flex-wrap: wrap;
     justify-content: center;
     width: 90%; /* Adjust based on design */
-    margin:0 auto;
-    height:100vh;
+    margin-top: 0;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: -207px;
+    height: 100vh;
 }
 
 .category-card {
@@ -171,6 +173,11 @@ hr{
     border: 1px solid white;
 }
 
+.project-info{
+    position:relative;
+    top:300px;
+    left:50px;
+}
 
  /* Container to hold the video and any overlay content */
     .video-background {
@@ -206,22 +213,17 @@ hr{
     font-family: "SourGummy Regular";
 }
 .logo-img {
-    background-image: url(../img/lucier_logo-3x3.png);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: contain;
-    margin-right: 35px;
+    margin-top: 170px;
+    padding-left: 99px;
 }
 
 .headshot-img {
-    background-image: url(../img/placeholder-2.png);
-    margin-top: 35px;
-    margin-left: 35px;
-}
+    margin-left: 105px;
+    margin-top: 98px;
 
-.projects-title {
-    font-family: "RibeyeMarrow Regular";
-    padding-top: 90px;
 }
 
 
@@ -229,28 +231,19 @@ hr{
 
 #project-1 {
     background-image: url(../img/bkg_2-1920x1080.png);
-    background-size: cover;
 
 }
-.project-hero-title {
+
+.projects-title {
     font-family: "RibeyeMarrow Regular";
-    font-style: italic;
-    font-size: 30px;
+    margin-top: 100px;
 }
-
-.project-info{
-    position: relative;
-    top: 180px;
-    left: 50px;
-    margin-left: 50px;
-    font-family: "SourGummy Regular";
-}
-.project-hero {
+.project-one-hero {
+    background-repeat: no-repeat;
+    margin-left: 80px;
     margin-top: 50px;
-    margin-bottom: 50px;
-    background-image: url(../img/trompe-de-oiel_poster.png);
+    background-image: url(../img/atellier-poster_600-818pxpx.jpg);
 }
-
 
 
 
@@ -260,7 +253,7 @@ hr{
 /* tag colors */
 
 .green{
-    background-color: rgba(125,64,100,1.00);
+    background-color:rgba(100, 125, 50, 1);
 }
 
 .othercolor{
@@ -270,11 +263,18 @@ hr{
 .tag {
     display: inline-block;
     /* border:1px solid white; */
-    padding: 5px 15px 5px 15px;
-    border-radius: 25px;
-    margin-top: 7px;
-    margin-bottom: 7px;
+    padding:5px 15px 5px 15px;
+    border-radius:25px;
 }
+.column .project-info #project-1-title {
+    font-family: "RibeyeMarrow Regular";
+    font-size: 22px;
+}
+.column .row .column {
+    padding-right: 71px;
+}
+
+
 
 
 
@@ -323,4 +323,25 @@ hr{
       }
   }
 .headline-text {
+}
+#category-selection #project-thumbnail-2 {
+}
+
+#project-thumbnail-1 {
+    background-repeat: no-repeat;
+    background-image: url(../img/atelier_400x250px.jpg);
+}
+#project-thumbnail-2 {
+    background-repeat: no-repeat;
+    background-image: url(../img/funeral-card_400x250px.png);
+}
+#project-thumbnail-3 {
+}
+#project-thumbnail-4 {
+}
+.project-two-hero {
+    background-repeat: no-repeat;
+    background-image: url(../img/funeral-card_600-818px.png);
+    margin-top: 50px;
+    margin-left: 80px;
 }
